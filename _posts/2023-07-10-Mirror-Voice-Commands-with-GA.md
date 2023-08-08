@@ -33,10 +33,10 @@ using Google Assistant and the setup precedure required.
 1. [Google Assistant MagicMirror Control Setup](#google-assistant-magicmirror-control-setup)
 1. [MirrorCommand Setup](#mirrorcommand-setup)
 1. [MirrorCommand Installation](#mirrorcommand-installation)
-    1. [Pre Installation](#pre-installation)
-    1. [Debian Package installation](#debian-package-installation)
-    1. [RPM Package installation](#rpm-package-installation)
-    1. [ALSA audio input and output devices configuration](alsa-audio-input-and-output-devices-configuration)
+   1. [Pre Installation](#pre-installation)
+   1. [Debian Package installation](#debian-package-installation)
+   1. [RPM Package installation](#rpm-package-installation)
+   1. [ALSA audio input and output devices configuration](#alsa-audio-input-and-output-devices-configuration)
 1. [Post installation configuration](#post-installation-configuration)
 1. [MagicMirror Configuration](#magicmirror-configuration)
 1. [Activate MagicMirror Voice Control](#activate-magicmirror-voice-control)
@@ -77,6 +77,7 @@ following the instructins at the
 [MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector).
 
 ### Google Assistant MagicMirror Control Setup
+
 After activating and configuring MMM-GoogleAssistant and MMM-Detector it is now
 time to tackle setting up MagicMirror control with Google Assistant. Test the initial
 MMM-GoogleAssistant setup by saying something like "Hey Google" or "OK Google"
@@ -85,6 +86,7 @@ should wake up and listen. Then say something like "What time is it" and verify
 that you get a response from Google Assistant. It it's working we can proceed.
 
 ### MirrorCommand Setup
+
 Voice control of MagicMirror as described in this document requires the
 use of a command line interface to issue the MagicMirror commands. This is
 accomplished with the
@@ -114,7 +116,7 @@ Manager (RPM).
 
 **XHOST:** The automated configuration requires access to some X11 graphical
 utilities. Depending upon your system's X11 configuration, it may be necessary
-to grant the *root* user access to the display. To do so, prior to installation
+to grant the _root_ user access to the display. To do so, prior to installation
 issue the command:
 
 `xhost +si:localuser:root`
@@ -141,7 +143,9 @@ Install the MirrorCommand package by executing the command
 ```bash
 sudo apt install ./MirrorCommand_<version>-<release>.deb
 ```
+
 or
+
 ```console
 sudo dpkg -i ./MirrorCommand_<version>-<release>.deb
 ```
@@ -161,12 +165,15 @@ Install the MirrorCommand package by executing the command
 ```bash
 sudo yum localinstall ./MirrorCommand_<version>-<release>.rpm
 ```
+
 or
+
 ```console
 sudo rpm -i ./MirrorCommand_<version>-<release>.rpm
 ```
 
 #### ALSA audio input and output devices configuration
+
 The MirrorCommand installation attempts to detect and configure ALSA
 audio input and output devices such as a microphone, webcam, or DAC.
 
@@ -249,7 +256,8 @@ services - it simply does not enable access to those services you do not use.
 #### Configure mirror script
 
 Edit the main MagicMirror management script,
-[**/usr/local/MirrorCommand/bin/mirror**](mirror.sh), setting:
+[**/usr/local/MirrorCommand/bin/mirror**](https://github.com/doctorfree/MirrorCommand/blob/master/mirror.sh),
+setting:
 
 - Location of your MagicMirror installation
 - IP address of your MagicMirror
@@ -309,6 +317,7 @@ with `sudo set_asound_conf -r`, and select a configuration for you with
 `sudo set_asound_conf -e -n`. See `set_asound_conf -u` for a full usage message.
 
 ### MagicMirror Configuration
+
 MagicMirror with the MirrorCommand package uses config files in
 `/usr/local/MagicMirror/config/` to control the behavior of the MagicMirror.
 The MirrorCommand package installs many preconfigured MagicMirror config
@@ -322,6 +331,7 @@ In `config-default.js` see the `recipes:` section and note the inclusion of the
 config file to enable the preconfigured MagicMirror voice commands.
 
 ### Activate MagicMirror Voice Control
+
 Once a MagicMirror config file has been created with the `MirrorCommand.js`
 Google Assistant recipe included in the `recipes:` section of the
 MMM-GoogleAssistant module, activate MagicMirror voice control via the command line.
@@ -397,6 +407,7 @@ Stop MagicMirror by saying "computer, mirror stop". If this is working try somet
 little more difficult like "computer, mirror screen off" and "computer, mirror screen on".
 
 ### References
+
 - [MagicMirror](https://magicmirror.builders/)
 - [MMM-GoogleAssistant wiki](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant)
 - [MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector)

@@ -4,6 +4,18 @@ icon: fas fa-info-circle
 order: 7
 ---
 
+The Mirror Command Line project provides scripts to enable
+command line control of the `MagicMirror` system over a local network.
+The `MirrorCommand` Debian and RPM format package installation scripts perform
+automatic installation and configuration of a `MagicMirror` including:
+
+- Automated installation of the `MagicMirror` software if not already installed
+- Automated configuration of the `MagicMirror`
+- Automated installation and configuration of several `MagicMirror` modules
+- `PM2` process manager installation and configuration
+- Semi-automated key management to enable a single source for adding, storing, and managing the several keys necessary to activate many `MagicMirror` modules
+- Hundreds of `MagicMirror` configuration files preconfigured with layouts for both portrait and landscape mode displays and module activation
+
 <div align="center">
   <h2 id="connect">Connect</h2>
   <p align="center">

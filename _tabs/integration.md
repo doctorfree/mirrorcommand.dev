@@ -17,9 +17,9 @@ In order to remotely access the MagicMirror command line it is necessary to
 setup SSH and associated SSH keys. That configuration is outside the scope
 of this document. There are a number of guides on configuring SSH access on
 a variety of systems. To get started with SSH configuration on a Raspberry Pi,
-see https://www.raspberrypi.org/documentation/computers/remote-access.html
+see <https://www.raspberrypi.org/documentation/computers/remote-access.html>
 
-Once SSH access is configured, the [**mm**](remote/mm) script can be installed on
+Once SSH access is configured, the [**mm**](https://github.com/doctorfree/MirrorCommand/blob/master/remote/mm) script can be installed on
 remote systems and used to remotely execute the mirror script on the system
 hosting MagicMirror. All arguments provided to <code>mm</code> are simply
 passed along to the <code>mirror</code> script.
@@ -35,6 +35,7 @@ on a Mac OS X system, execute the command:
 where IP_ADDRESS is the IP address of the MagicMirror system. Once logged into
 the MagicMirror system, the <code>mirror</code> command can be executed at a
 shell command prompt:
+
 <pre>
 pi@raspberrypi:~ $ mirror
 </pre>
@@ -48,13 +49,13 @@ described in the following sections.
 ### Remote execution of mirror commands
 
 If you wish to execute mirror commands remotely then install the convenience
-script [**mm**](remote/mm) on a system with SSH access to your MagicMirror. This
+script [**mm**](https://github.com/doctorfree/MirrorCommand/blob/master/remote/mm) on a system with SSH access to your MagicMirror. This
 script can be used to remotely execute the main mirror script.
 
 ### Remote view of MagicMirror display
 
 If you wish to view the MagicMirror display remotely then install the convenience
-script [**vncview**](remote/vncview) on a system with SSH access to your MagicMirror. This
+script [**vncview**](https://github.com/doctorfree/MirrorCommand/blob/master/remote/vncview) on a system with SSH access to your MagicMirror. This
 script can be used to remotely execute a VNC server and locally execute a VNC client.
 
 ### MMM-Remote-Control integration
@@ -99,7 +100,7 @@ to install the module and setup a Telegram Bot, the config section of the
 MMM-TelegramBot module entry in `config.js` must be modified to add
 `customCommands`. Samples of how to do this are in the config files in
 this repository. For example, see the `customCommands` entry in
-[**config/config-default.js**](config/config-default.js).
+[**config/config-default.js**](https://github.com/doctorfree/MirrorCommand/blob/master/config/config-default.js).
 
 Here is the section of the `customCommands` array definition in the config
 section of the MMM-TelegramBot module entry in `config.js` that defines the
@@ -167,11 +168,11 @@ one of the config files in this repository then you will have three new
 custom Telegram commands:
 
 - /myReboot
-    - Custom reboot command which executes /usr/local/bin/myreboot
+  - Custom reboot command which executes /usr/local/bin/myreboot
 - /myShutdown
-    - Custom shutdown command which executes /usr/local/bin/myshutdown
+  - Custom shutdown command which executes /usr/local/bin/myshutdown
 - /mirror
-    - General purpose command which executes the /usr/local/bin/mirror command with any arguments supplied in the Telegram command (e.g. `/mirror info` will retrieve your MagicMirror system information)
+  - General purpose command which executes the /usr/local/bin/mirror command with any arguments supplied in the Telegram command (e.g. `/mirror info` will retrieve your MagicMirror system information)
 
 A few examples follow:
 
@@ -199,6 +200,7 @@ To list the MagicMirror active modules, issue the command:
 ```
 /mirror list active
 ```
+
 Any `mirror` command can be executed via Telegram in this manner.
 See `mirror -u` for the `mirror` usage message.
 
@@ -209,34 +211,36 @@ control of your MagicMirror utilizing the
 [MMM-GoogleAssistant](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant)
 module. Most of the MagicMirror config files in the config subdirectory
 come preconfigured with voice command support. See
-[**config/config-default.js**](config/config-default.js) for a sample config
+[**config/config-default.js**](https://github.com/doctorfree/MirrorCommand/blob/master/config/config-default.js) for a sample config
 file with voice control enabled.
 
 In addition to preconfigured config files, MirrorCommand provides several
-[custom MMM-GoogleAssistant recipes](modules/MMM-GoogleAssistant/recipes).
+[custom MMM-GoogleAssistant recipes](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/recipes).
 These include recipes to:
-- [Enable `mirror` command support via voice](modules/MMM-GoogleAssistant/recipes/MirrorCommand.js)
-    - Voice commands to:
-	    - Restart MagicMirror
-		- Rotate the screen
-		- Turn the screen on/off
-		- Mute/unmute sound
-		- Copy custom config files into config.js and restart the mirror
-        - Manage MagicMirror screen position on multi-screen systems
-            - Move MagicMirror to screen 1
-                - Say `screen one` or `mirror screen one`
-            - Move MagicMirror to screen 2
-                - Say `screen two` or `mirror screen two`
-            - Switch the MagicMirror screen
-                - Say `screen switch` or `switch screens` or `mirror screen switch`
-- [Voice management of MMM-Scenes scenes](modules/MMM-GoogleAssistant/recipes/with-MMM-Scenes.js)
-    - Next scene
-	- Previous scene
-	- Scene by number (e.g. `scene 2`)
-- [Customized reboot/restart/shutdown voice commands](modules/MMM-GoogleAssistant/recipes/myReboot-Restart-Shutdown.js)
-- [Radio station play via voice](modules/MMM-GoogleAssistant/recipes/ExtRadio.js)
+
+- [Enable `mirror` command support via voice](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/recipes/MirrorCommand.js)
+  - Voice commands to:
+    - Restart MagicMirror
+    - Rotate the screen
+    - Turn the screen on/off
+    - Mute/unmute sound
+    - Copy custom config files into config.js and restart the mirror
+      - Manage MagicMirror screen position on multi-screen systems
+        - Move MagicMirror to screen 1
+          - Say `screen one` or `mirror screen one`
+        - Move MagicMirror to screen 2
+          - Say `screen two` or `mirror screen two`
+        - Switch the MagicMirror screen
+          - Say `screen switch` or `switch screens` or `mirror screen switch`
+- [Voice management of MMM-Scenes scenes](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/recipes/with-MMM-Scenes.js)
+  - Next scene
+  - Previous scene
+  - Scene by number (e.g. `scene 2`)
+- [Customized reboot/restart/shutdown voice commands](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/recipes/myReboot-Restart-Shutdown.js)
+- [Radio station play via voice](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/recipes/ExtRadio.js)
 
 ### Google Cloud Platform API Keys
+
 Several MagicMirror modules require a Google Cloud Platform API. The MMM-GoogleAssistant
 and MMM-GoogleMapsTraffic modules are examples of these. In order to configure
 the MMM-GoogleAssistant module you will need to create a Google Action project
@@ -251,7 +255,7 @@ description of this process.
 
 **NOTE:** When authorizing the YouTube access token with `npm run tokens` as the final
 step in this process, I found it necessary to modify
-[MMM-GoogleAssistant/install/auth_YouTube.js](modules/MMM-GoogleAssistant/install/auth_YouTube.js)
+[MMM-GoogleAssistant/install/auth_YouTube.js](https://github.com/doctorfree/MirrorCommand/blob/master/modules/MMM-GoogleAssistant/install/auth_YouTube.js)
 to add a console log output of the generated URL to allow access. This was necessary
 in my case because I was performing the process over an SSH connection in a terminal.
 This is not necessary if you are accessing the MagicMirror directly or if you have
@@ -263,9 +267,9 @@ this modification, it can be found at the link above.
 In addition to the voice control of MMM-Scenes described above, several `mirror`
 commands have been added to support management of MMM-Scenes scenes via the
 command line. Supported commands include:
+
 - `mirror scene next` : display the next scene in the scenario
 - `mirror scene prev` : display the previous scene in the scenario
 - `mirror scene name` : display the scene named 'name'
-- `mirror scene num`  : display scene number 'num'
+- `mirror scene num` : display scene number 'num'
 - `mirror scene info` : retrieve info on MMM-Scenes configuration
-

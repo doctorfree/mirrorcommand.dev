@@ -4,7 +4,542 @@ toc: true
 post_style: page
 ---
 
-<p>Demo website</p>
+<blockquote>
+  <p>
+    <strong
+      >“The cosmic operating system uses a command line interface. It runs on
+      something like a teletype, with lots of noise and heat; punched-out bits
+      flutter down into its hopper like drifting stars. The demiurge sits at his
+      teletype, pounding out one command line after another, specifying the
+      values of fundamental constants of physics:</strong
+    >
+  </p>
+  <p>
+    <code
+      >universe -G 6.672e-11 -e 1.602e-19 -h 6.626e-34 -protonmass
+      1.673e-27</code
+    >
+  </p>
+  <p>
+    <strong
+      >and when he’s finished typing out the command line, his right pinky
+      hesitates above the enter key for an aeon or two, wondering what’s going
+      to happen; then down it comes—and the whack you hear is another Big
+      Bang.”</strong
+    >
+  </p>
+  <p>― Neal Stephenson, In the Beginning…Was the Command Line</p>
+</blockquote>
+<h1 id="mirrorcommand">MirrorCommand</h1>
+<p>
+  <a href="https://magicmirror.builders">MagicMirror</a> is an open source
+  modular smart mirror platform (see https://magicmirror.builders/). This
+  repository maintains an extensive set of scripts to initialize, configure,
+  monitor, and manage a MagicMirror.
+</p>
+<p>
+  MirrorCommand is one of the <a href="https://neoman.dev">Neoman</a> managed
+  projects:
+</p>
+<table>
+  <colgroup>
+    <col style="width: 30%" />
+    <col style="width: 33%" />
+    <col style="width: 36%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th><strong>Neoman</strong></th>
+      <th><strong>Managed</strong></th>
+      <th><strong>Projects</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td><a href="https://asciiville.dev">Asciiville</a></td>
+      <td><a href="https://lazyman.dev">Lazyman</a></td>
+      <td><a href="https://mirrorcommand.dev">MirrorCommand</a></td>
+    </tr>
+    <tr class="even">
+      <td><a href="https://musicplayerplus.dev">MusicPlayerPlus</a></td>
+      <td><a href="https://neoman.dev">Neoman</a></td>
+      <td><a href="https://rooncommand.dev">RoonCommandLine</a></td>
+    </tr>
+  </tbody>
+</table>
+<h2 id="overview">Overview</h2>
+<p>
+  The Mirror Command Line project provides scripts to enable command line
+  control of the MagicMirror system over a local network. The MirrorCommand
+  Debian and RPM format package installation scripts perform automatic
+  installation and configuration of a MagicMirror including:
+</p>
+<ul>
+  <li>
+    Automated installation of the MagicMirror software if not already installed
+  </li>
+  <li>Automated configuration of the MagicMirror</li>
+  <li>
+    Automated installation and configuration of several MagicMirror modules
+  </li>
+  <li>PM2 process manager installation and configuration</li>
+  <li>
+    Semi-automated key management to enable a single source for adding, storing,
+    and managing the several keys necessary to activate many MagicMirror modules
+  </li>
+  <li>
+    Hundreds of MagicMirror configuration files preconfigured with layouts for
+    both portrait and landscape mode displays and module activation
+  </li>
+</ul>
+<p>
+  The <code>mirror</code> command can be installed on your MagicMirror to issue
+  MagicMirror commands. Currently the command line MagicMirror control scripts
+  include support for:
+</p>
+<ul>
+  <li>Specifying the MagicMirror configuration file to activate</li>
+  <li>Starting, stopping, and restarting the MagicMirror</li>
+  <li>
+    Display of various system info
+    <ul>
+      <li>Temperature</li>
+      <li>Memory</li>
+      <li>Disk</li>
+      <li>Usb</li>
+      <li>Network</li>
+      <li>Wireless</li>
+      <li>Screen</li>
+    </ul>
+  </li>
+  <li>List active/installed MagicMirror modules</li>
+  <li>List available MagicMirror configuration files</li>
+  <li>Rotate the MagicMirror screen</li>
+  <li>Get or set the brightness level</li>
+  <li>
+    Control MagicMirror video playback
+    <ul>
+      <li>Start/Stop video play</li>
+      <li>Replay video</li>
+      <li>Play next video</li>
+      <li>Hide video playback module</li>
+      <li>Show video playback module</li>
+    </ul>
+  </li>
+  <li>Control the MagicMirror audio output volume level</li>
+  <li>Get MagicMirror status</li>
+  <li>Update the MagicMirror installation or update installed modules</li>
+  <li>Auto generation of new MagicMirror configuration files</li>
+  <li>
+    Interactive mode via menu dialogs
+    <ul>
+      <li>
+        Invoked with no arguments the mirror command displays a command menu.
+      </li>
+    </ul>
+  </li>
+</ul>
+<h2 id="compatibility">Compatibility</h2>
+<p>
+  MirrorCommand has been successfully deployed and tested on a Raspberry Pi 4
+  and Raspberry Pi 400 running Raspbian Buster. It has also been deployed and
+  tested on Ubuntu Linux 20.04 and Fedora Linux 35 with generic x86_64 hardware.
+</p>
+<p>
+  It has been tested on systems with a mirror display and systems with a
+  standard computer monitor display. MirrorCommand version 2.7 and later has
+  been tested on systems with multiple monitors. Testing has been performed on
+  systems with a variety of screen resolutions and orientation including
+  1920x1080 portrait mode display, 2560x1440 landscape mode display, and
+  1920x1080 landscape mode display. Deployment of the MirrorCommand MagicMirror
+  configuration files on screens with display resolution differing significantly
+  from those tested may require changes to the module positions, layout, and
+  geometry.
+</p>
+<p>
+  MirrorCommand installation packages are available in both the Debian packaging
+  format and the RPM packaging format so the automated installation is available
+  for all systems that support Debian or RPM packaging formats. That’s most
+  Linux environments.
+</p>
+<h2 id="installation">Installation</h2>
+<p>
+  See the
+  <a href="https://mirrorcommand.dev/install">MirrorCommand Installation</a>
+  section for detailed installation instructions.
+</p>
+<h2 id="configuration">Configuration</h2>
+<p>
+  See the
+  <a href="https://mirrorcommand.dev/configuration"
+    >MirrorCommand Configuration</a
+  >
+  section for detailed configuration instructions.
+</p>
+<h2 id="custom-package-creation">Custom Package Creation</h2>
+<p>
+  You can create your own custom Debian and RPM format packages from the
+  repository source. To do so, clone the MirrorCommand repository:
+</p>
+<p><code>git clone ssh://gitlab.com/doctorfree/MirrorCommand.git</code></p>
+<p>or</p>
+<p>
+  <code
+    >git clone
+    <code>https://gitlab.com/doctorfree/MirrorCommand.git</code></code
+  >
+</p>
+<p>
+  Use the <code>mkpkg</code> script to create Debian and RPM format packages on
+  a system with the prerequisite packaging development environment. Once
+  packages have been created in the source repository they can be installed by
+  executing the <code>./Install</code> command. Packages can be removed with
+  <code>./Uninstall</code>.
+</p>
+<h2 id="removal">Removal</h2>
+<p>
+  On Debian based Linux systems where the MirrorCommand package was installed
+  using the MirrorCommand Debian format package, remove the MirrorCommand
+  package by executing the command:
+</p>
+<div class="sourceCode" id="cb1">
+  <pre
+    class="sourceCode bash"
+  ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"
+          tabindex="-1"></a> <span class="fu">sudo</span> apt remove mirrorcommand</span></code></pre>
+</div>
+<p>or</p>
+<div class="sourceCode" id="cb2">
+  <pre
+    class="sourceCode bash"
+  ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"
+          tabindex="-1"></a> <span class="fu">sudo</span> dpkg <span class="at">-r</span> mirrorcommand</span></code>
+  </pre>
+</div>
+<p>
+  <strong>Note:</strong> Removal may issue a warning about removing
+  <code>/usr/local</code> and other folders within <code>/usr/local</code>. This
+  is an artifact of the Debian packaging system. If you wish to silence that
+  warning and prevent the Debian packaging system from trying to remove
+  <code>/usr/local</code> then install the
+  <a href="https://gitlab.com/doctorfree/core-custom-local/-/releases"
+    >core-custom-local Debian package</a
+  >.
+</p>
+<p>
+  On RPM based Linux systems where the MirrorCommand package was installed using
+  the MirrorCommand RPM format package, remove the MirrorCommand package by
+  executing the command:
+</p>
+<div class="sourceCode" id="cb3">
+  <pre
+    class="sourceCode bash"
+  ><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"
+          tabindex="-1"></a> <span class="fu">sudo</span> yum remove MirrorCommand</span></code></pre>
+</div>
+<p>or</p>
+<div class="sourceCode" id="cb4">
+  <pre
+    class="sourceCode bash"
+  ><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"
+          tabindex="-1"></a> <span class="fu">sudo</span> rpm <span class="at">-e</span> MirrorCommand</span></code>
+  </pre>
+</div>
+<h2 id="supporting-utilities-and-config-files">
+  Supporting utilities and config files
+</h2>
+<p>
+  There are several supporting scripts that can be used to enhance command line
+  capabilites. These are installed in
+  <code>/usr/local/MirrorCommand/bin</code> with symbolic links created in
+  <code>/usr/local/bin</code>. Ensure that <code>/usr/local/bin</code> is in
+  your execution PATH.
+</p>
+<p>
+  Many sample MagicMirror configuration files are provided in the
+  <a href="config"><strong>/usr/local/MirrorCommand/config</strong></a>
+  directory. The installation package script attempts to link these into your
+  MagicMirror config folder. The sample config files use the naming convention
+  <code>config-&lt;name&gt;.js</code>.
+</p>
+<p>
+  Several custom CSS files are provided in the `/usr/local/MirrorCommand/css
+  directory. Copy and modify as needed.
+</p>
+<p>Some of the more useful supporting scripts include:</p>
+<ul>
+  <li>
+    <a href="scripts/audiotest.sh"><strong>audiotest</strong></a> Test the ALSA
+    audio configuration by playing test sounds to each speaker
+  </li>
+  <li>
+    <a href="scripts/camsnap.sh"><strong>camsnap</strong></a> Snap a photo with
+    your MagicMirror webcam
+  </li>
+  <li>
+    <a href="scripts/chkconfig.sh"><strong>chkconfig</strong></a> Check your
+    MagicMirror configuration files
+  </li>
+  <li>
+    <a href="chkinst"><strong>chkinst</strong></a> Check your Mirror Command
+    Line installation
+  </li>
+  <li>
+    <a href="scripts/chktemp.sh"><strong>chktemp</strong></a> Check your
+    MagicMirror Raspberry Pi temperature
+  </li>
+  <li>
+    <a href="scripts/get_temps.sh"><strong>get_temps</strong></a> Get your
+    MagicMirror Raspberry Pi temperature
+  </li>
+  <li>
+    <a href="scripts/gethue.sh"><strong>gethue</strong></a> Get your Hue Hub
+    properties
+  </li>
+  <li>
+    <a href="scripts/getquote.sh"><strong>getquote</strong></a> Get a stock
+    symbol quote
+  </li>
+  <li>
+    <a href="scripts/mmapiactions.sh"><strong>mmapiactions</strong></a> Get the
+    MMM-Remote-Control API actions
+  </li>
+  <li>
+    <a href="scripts/mmgetb.sh"><strong>mmgetb</strong></a> Get the MagicMirror
+    screen brightness level
+  </li>
+  <li>
+    <a href="scripts/mmsetb.sh"><strong>mmsetb</strong></a> Set the MagicMirror
+    screen brightness level
+  </li>
+  <li>
+    <a href="scripts/myreboot.sh"><strong>myreboot</strong></a> Perform
+    additional actions before reboot, executed as a normal user using sudo
+  </li>
+  <li>
+    <a href="scripts/myshutdown.sh"><strong>myshutdown</strong></a> Perform
+    additional actions before shutdown, executed as a normal user using sudo
+  </li>
+  <li>
+    <a href="scripts/rand_back.sh"><strong>rand_back</strong></a> Select a
+    random desktop wallpaper
+  </li>
+  <li>
+    <a href="bin/set_asound_conf"><strong>set_asound_conf</strong></a> Set the
+    ALSA sound configuration in <code>/etc/asound.conf</code>
+  </li>
+  <li>
+    <a href="scripts/vncview.sh"><strong>vncview</strong></a> Remote script to
+    start a VNC server on your MagicMirror and a VNC viewer on your desktop
+  </li>
+  <li>
+    <a href="scripts/vol.sh"><strong>vol</strong></a> Script to control volume
+    level of MagicMirror audio output
+  </li>
+  <li>
+    <a href="scripts/wireless_conf.sh"><strong>wireless_conf</strong></a>
+    Configure wireless using WPA Supplicant
+  </li>
+  <li>
+    <a href="wireless_dot_sample"><strong>wireless_dot_sample</strong></a>
+    Sample $HOME/.wireless to assist in wireless configuration
+  </li>
+</ul>
+<h2 id="integration">Integration</h2>
+<p>
+  See the
+  <a href="https://mirrorcommand.dev/integration">MirrorCommand Integration</a>
+  section for information on integration of MirrorCommand with external
+  components.
+</p>
+<h2 id="documentation">Documentation</h2>
+<p>
+  See the
+  <a href="https://mirrorcommand.dev/documentation"
+    >MirrorCommand Documentation</a
+  >
+  section for MirrorCommand documentation, man pages, and usage.
+</p>
+<h2 id="motivation">Motivation</h2>
+<h3 id="introduction-to-using-the-command-line">
+  Introduction to Using the Command Line
+</h3>
+<p>
+  The command line has a long and storied history in computing. Read some of
+  that history, learn how to open a command line terminal window on various
+  systems, how to get started using the command line, and see some examples of
+  why the command line interface is so powerful by reading the MirrorCommand
+  article
+  <a
+    href="https://mirrorcommand.dev/posts/Introduction-to-Using-the-Command-Line"
+    >Introduction to Using the Command Line</a
+  >.
+</p>
+<p>
+  This introduction to the command line includes an example of how to automate
+  display of a specified menu on a MagicMirror at designated times of day.
+</p>
+<h3 id="why-would-i-need-or-want-command-line-control-of-magicmirror">
+  Why would I need or want command line control of MagicMirror
+</h3>
+<p>
+  One might reasonably ask “Why would I need or want command line control of my
+  MagicMirror”? Truth be told, most MagicMirror users do not need or want
+  command line control of MagicMirror or any other software. They are happy with
+  the graphical user interfaces they use and never ever see a command line
+  prompt. So the answer to that question is almost always “You don’t”.
+</p>
+<p>
+  However, some users (mostly old propeller head codgers) are comfortable at the
+  command line and prefer to use it over the tedious mouse clicks required to
+  get anything done in a graphical user interface. Different lanes for different
+  brains.
+</p>
+<p>
+  I would say the most significant use case for command line control of anything
+  is automation. For example, if I want to schedule playback of specified music
+  in specific zones triggered by some event, then command line control can be
+  used to implement this. That can be done via Cron jobs, play something in some
+  zone at scheduled times. Or playback of specified songs in selected zones
+  could be triggered by some event like when a particular face is recognized by
+  my smart mirror or when my smart lights are turned to a particular profile. I
+  use command line control of MagicMirror coupled with Apple Siri voice commands
+  that trigger an SSH shortcut to run the command. There are many use cases for
+  automation using command line utilities.
+</p>
+<p>
+  The other main use case for command line control is simple convenience. If you
+  spend a lot of time in a Shell environment then it is just easier to type a
+  command that plays what you would like to hear where you want to hear it than
+  it is to switch windows, bring up a GUI, click a few times to find what you
+  want, and click to play it, then go back to your terminal window and Shell
+  env. Most people do not live in a Shell environment like I do so this use case
+  is not that significant.
+</p>
+<p>
+  Finally, the command line interface and the associated MagicMirror API can
+  provide capabilities not otherwise available. Searching, listing, and
+  filtering can be augmented by the plethora of tools available in a typical
+  Shell environment. You can pipe the output of a <code>mirror</code> command to
+  grep, sed, awk, and other standard utilities to produce results difficult to
+  achieve otherwise. That is, command line control along with the API and Shell
+  utilities/builtins can extend the capabilities of the MagicMirror system. The
+  MirrorCommand package also enables some features not easily available in
+  MagicMirror. One of these, management of a large number of preconfigured
+  MagicMirror config files, allows the MirrorCommand user to easily and quickly
+  switch between any of these preconfigured config files. In my household I find
+  it frequently desirable to be able to switch MagicMirror configs easily and
+  quickly and I can do so by configuring these presets to my typical use cases
+  and executing a simple <code>mirror</code> command.
+</p>
+<h3 id="history">History</h3>
+<p>
+  This project began as an attempt to control my MagicMirror with Siri voice
+  commands. I was able to get Siri voice control of a MagicMirror working with
+  simple SSH shortcuts that execute Bash scripts on my mirror’s Raspberry Pi.
+  Apple’s SSH shortcuts are a powerful tool for command line control. They can
+  be used to execute commands on systems that allow SSH access and they can be
+  configured to activate via voice commands. SSH shortcuts enable voice control
+  of anything that can be done at the command line.
+</p>
+<p>
+  I created shortcuts on my iPhone which use the “Run script over SSH” option
+  for Apple Scripting shortcuts. The shortcuts execute the appropriate Bash
+  command on my MagicMirror Pi. Once I got the MagicMirror shortcuts working I
+  then configured Siri to recognize various phrases to run those shortcuts. In
+  this manner I was able to implement Siri voice control of my MagicMirror.
+</p>
+<p>
+  Over time the project became primarily focused on the command line execution
+  of these scripts as I found I spend more time in a terminal at the command
+  line than I do talking to Siri. While voice control is still supported if
+  configured properly, the project is primarily command line control of
+  MagicMirror.
+</p>
+<p>
+  Recent releases have focused on automated installation and configuration as
+  well as configuration based upon auto-detected system features. Some aspects
+  of the automated installation of MagicMirror drew upon previous work by Sam
+  Detweiler in his
+  <a href="https://github.com/sdetweil/MagicMirror_scripts"
+    >MagicMirror scripts project</a
+  >.
+</p>
+<h2 id="contents">Contents</h2>
+<p>
+  See the <a href="https://mirrorcommand.dev/commands">Commands</a> section for
+  a partial contents listing of commands and configuration files.
+</p>
+<h2 id="known-limitations">Known Limitations</h2>
+<p>The following are known limitations in the current release:</p>
+<ul>
+  <li>
+    The installation packages are interactive and cannot be integrated into an
+    unattended install process
+  </li>
+  <li>
+    The MirrorCommand config files are modified by the
+    <code>showkeys</code> command in a manner that prevents subsequent key value
+    changes and a rerun of <code>showkeys</code>
+    <ul>
+      <li>
+        A key value can be added to an empty key array entry and
+        <code>showkeys</code> rerun
+      </li>
+      <li>
+        Once a key value has been set in <code>mirrorkeys</code> and
+        <code>showkeys</code> has been run, that value is hard coded in all
+        config files that use it
+      </li>
+    </ul>
+  </li>
+  <li>
+    If a secondary monitor is attached but the system does not recognize it as
+    “connected” then it will not be added to the
+    <code>mirrorscreens</code> config file and the <code>mirror</code>
+    command will not recognize it
+    <ul>
+      <li>
+        In some cases it is necessary to power on the monitor prior to booting
+        the system in order for the X11 graphical system to recognize the
+        monitor
+      </li>
+    </ul>
+  </li>
+  <li>
+    Significant effort has been made to adjust the module layouts in all config
+    files to create a MagicMirror display with non-overlapping regions. However,
+    some screen resolutions may need manual adjustment of some config files to
+    arrive at a pleasant display. Testing has been limited to only a few screen
+    resolutions and display modes.
+  </li>
+  <li>
+    The current release does not fully support seamless upgrades nor have
+    upgrades been thoroughly tested. If a future upgrade of the MirrorCommand
+    package fails or does not entirely complete, the recommended procedure is to
+    backup all MagicMirror and MirrorCommand files, remove the MirrorCommand
+    package, and install the newer MirrorCommand package.
+  </li>
+</ul>
+<h2 id="screenshots">Screenshots</h2>
+<p float="left">
+  Sample default and weather configs<br />
+  <img src="screenshots/mirror_default.png" />
+  <img src="screenshots/mirror_weather.png" />
+</p>
+<p float="left">
+  Interactive menus when invoked with no arguments<br />
+  <img src="screenshots/mirror_command_menu.jpg" />
+  <img src="screenshots/mirror_submenu.jpg" />
+</p>
+<h2 id="license">License</h2>
+<p>
+  Copyright: 2014-2022 Ronald Joe Record
+  <a href="mailto:ronaldrecord@gmail.com" class="email"
+    >ronaldrecord@gmail.com</a
+  >
+</p>
+<p>License: MIT</p>
 
 <div align="center">
   <h2 id="connect">Connect</h2>

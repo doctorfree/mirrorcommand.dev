@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 10
+order: 7
 ---
 
 <div align="center">

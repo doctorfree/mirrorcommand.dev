@@ -18,21 +18,22 @@ timezone: America/Los_Angeles
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Starter # the main title
+title: MirrorCommand # the main title
 
 tagline: A text-focused Jekyll theme # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  The Mirror Command Line project provides scripts to enable
+  command line control of the MagicMirror system over a local network.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ""
 
 github:
-  username: doctorfree # change to your github username
+  username: doctorfree/MirrorCommand
 
 twitter:
-  username: ronrecord # change to your twitter username
+  username: ronrecord
 
 social:
   name: Ronald Record
@@ -73,7 +74,7 @@ theme_mode:
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/competence.png"
+avatar: "/assets/magicmirror.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -89,23 +90,25 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo-name>
-    repo_id: # The repository node id, find it with "gh api repos/${repo} | jq '.node_id'"
-    category: # The repo discussion category for comments, e.g. General
-    category_id: # This is the hardest thing to find. Use the following script:
-                 # gh api graphql -f query='
-                 # {
-                 #   repository(owner: "<gh-username>", name: "<repo-name>") {
-                 #     id
-                 #     name
-                 #     discussionCategories(first: 10) {
-                 #       nodes {
-                 #         id
-                 #         name
-                 #       }
-                 #     }
-                 #   }
-                 # }'
+    repo: doctorfree/mirrorcommand.dev
+    repo_id: R_kgDOKE8QAA # The repository node id, find it with "gh api repos/${repo} | jq '.node_id'"
+    category: General # The repo discussion category for comments, e.g. General
+    category_id:
+      DIC_kwDOKE8QAM4CYdmZ
+      # This is the hardest thing to find. Use the following script:
+      # gh api graphql -f query='
+      # {
+      #   repository(owner: "<gh-username>", name: "<repo-name>") {
+      #     id
+      #     name
+      #     discussionCategories(first: 10) {
+      #       nodes {
+      #         id
+      #         name
+      #       }
+      #     }
+      #   }
+      # }'
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`

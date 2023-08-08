@@ -1,6 +1,6 @@
 ---
 icon: fas fa-gg-circle
-order: 9
+order: 6
 ---
 
 [Doctorfree](https://github.com/doctorfree) maintains the following sister projects

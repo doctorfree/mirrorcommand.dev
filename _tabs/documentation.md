@@ -165,7 +165,7 @@ To start MagicMirror on a specified screen execute the command:
 The `MirrorCommand` package installs several `MMM-GoogleAssistant` voice
 recipes. One of these, the `MirrorCommand.js` recipe, enables several voice
 commands that can be used to control the MagicMirror. See the section
-[MMM-GoogleAssistant integration](#mmm-googleassistant-integration)
+[MMM-GoogleAssistant integration](https://mirrorcommand.dev/integration#mmm-googleassistant-integration)
 to get started with MMM-GoogleAssistant setup and integration.
 
 Once you have MMM-GoogleAssistant working and you can talk to your mirror

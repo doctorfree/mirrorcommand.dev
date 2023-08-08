@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 7
+order: 8
 ---
 
 The Mirror Command Line project provides scripts to enable

@@ -18,6 +18,9 @@ which may be of interest:
 [RoonCommandLine](https://rooncommand.dev)
 : The Roon Command Line project provides Bash and Python scripts to enable command line control of the Roon audio system over a local network.
 
+[MirrorCommand](https://mirrorcommand.dev)
+: The Mirror Command Line project provides scripts to enable command line control of the MagicMirror system over a local network.
+
 [Neoman](https://neoman.dev)
 : The Neoman project can be used to install, initialize, configure, and manage neovim, neomutt, newsboat, btop++, kitty, neofetch, w3m, and tmux. All of these are powerful, configurable, character-based programs. Neoman automates the installation, initialization, configuration, and management of these tools using a command line and character menu interface.
 

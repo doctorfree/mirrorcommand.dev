@@ -21,6 +21,9 @@ which may be of interest:
 [MirrorCommand](https://mirrorcommand.dev)
 : The Mirror Command Line project provides scripts to enable command line control of the MagicMirror system over a local network.
 
+[Ascii Games](https://asciigames.neoman.dev)
+: The asciigames project provides several precompiled and prepackaged open source character based Ascii games.
+
 [Neoman](https://neoman.dev)
 : The Neoman project can be used to install, initialize, configure, and manage neovim, neomutt, newsboat, btop++, kitty, neofetch, w3m, and tmux. All of these are powerful, configurable, character-based programs. Neoman automates the installation, initialization, configuration, and management of these tools using a command line and character menu interface.
 

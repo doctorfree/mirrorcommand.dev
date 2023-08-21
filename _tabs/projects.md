@@ -2,7 +2,7 @@
 layout: post
 toc: true
 post_style: page
-icon: fas fa-gg-circle
+icon: fas fa-cubes
 order: 8
 ---
 

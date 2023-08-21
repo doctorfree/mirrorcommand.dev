@@ -6,15 +6,22 @@ icon: fas fa-cubes
 order: 8
 ---
 
-[Doctorfree](https://github.com/doctorfree) maintains the following sister projects which may be of interest
+[Doctorfree](https://github.com/doctorfree) maintains the following
+sister projects which may be of interest:
 
-## Table of Projects
+| **Sister** |        | **Projects** |
+| :----------| :----: | -----------: |
+| [Asciiville](https://asciiville.dev) | [MusicPlayerPlus](https://musicplayerplus.dev) | [RoonCommandLine](https://rooncommand.dev) |
+| [MirrorCommand](https://mirrorcommand.dev) | [Ascii Games](https://asciigames.neoman.dev) | [Neoman](https://neoman.dev) |
 
-| **Sister**                                 |                                              |                                   **Projects** |
-| :----------------------------------------- | :------------------------------------------: | ---------------------------------------------: |
-| [Asciiville](https://asciiville.dev)       |        [Lazyman](https://lazyman.dev)        | [MusicPlayerPlus](https://musicplayerplus.dev) |
-| [RoonCommandLine](https://rooncommand.dev) |  [MirrorCommand](https://mirrorcommand.dev)  |             [LazyIde](https://ide.lazyman.dev) |
-| [Webdev](https://webdev.lazyman.dev)       | [Ascii Games](https://asciigames.neoman.dev) |                   [Neoman](https://neoman.dev) |
+| **Lazyman** |        |        | **Projects** |
+| :-----------| :----: | :----: | -----------: |
+| [Lazyman](https://lazyman.dev) | [LazyIde](https://ide.lazyman.dev) | [Webdev](https://webdev.lazyman.dev) | [AstroNvim](https://astronvim.lazyman.dev) |
+| [LazyVim](https://lazyvim.lazyman.dev) | [LunarVim](https://lunarvim.lazyman.dev) | [NvChad](https://nvchad.lazyman.dev) | |
+
+| **Miscellaneous** |        | **Projects** |
+| :-----------------| :----: | -----------: |
+| [Ancient Website](https://archive.ronrecord.com) | [Chrome Themes](https://google-chrome-themes) | [Skunkware Archive](https://skunkware.dev) |
 
 ## [Asciiville](https://asciiville.dev)
 

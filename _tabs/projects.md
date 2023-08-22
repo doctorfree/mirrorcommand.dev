@@ -17,11 +17,11 @@ sister projects which may be of interest:
 | **Lazyman** |        |        | **Projects** |
 | :-----------| :----: | :----: | -----------: |
 | [Lazyman](https://lazyman.dev) | [LazyIde](https://ide.lazyman.dev) | [Webdev](https://webdev.lazyman.dev) | [AstroNvim](https://astronvim.lazyman.dev) |
-| [LazyVim](https://lazyvim.lazyman.dev) | [LunarVim](https://lunarvim.lazyman.dev) | [NvChad](https://nvchad.lazyman.dev) | |
+| [LazyVim](https://lazyvim.lazyman.dev) | [LunarVim](https://lunarvim.lazyman.dev) | [NvChad](https://nvchad.lazyman.dev) | [Wiki](https://github.com/doctorfree/nvim-lazyman/wiki) |
 
 | **Miscellaneous** |        | **Projects** |
 | :-----------------| :----: | -----------: |
-| [Ancient Website](https://archive.ronrecord.com) | [Chrome Themes](https://google-chrome-themes) | [Skunkware Archive](https://skunkware.dev) |
+| [Ancient Website](https://archive.ronrecord.com) | [Chrome Themes](https://themes.ronrecord.com) | [Skunkware Archive](https://skunkware.dev) |
 
 ## [Asciiville](https://asciiville.dev)
 

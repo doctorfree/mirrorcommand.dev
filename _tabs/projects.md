@@ -29,7 +29,7 @@ Ascii art tools and media, Asciiville includes nearly 1,000 works of ASCII and A
 
 ## [Lazyman](https://lazyman.dev)
 
-The Lazyman project can be used to install, initialize, and manage multiple Neovim configurations. 101 popular Neovim configurations are supported
+The Lazyman project can be used to install, initialize, and manage multiple Neovim configurations. Over 100 popular Neovim configurations are supported
 
 ## [MusicPlayerPlus](https://musicplayerplus.dev)
 

@@ -4,6 +4,14 @@ icon: fas fa-info-circle
 order: 9
 ---
 
+<div data-align="center">
+  <img
+    src="https://raw.githubusercontent.com/wiki/doctorfree/MirrorCommand/screenshots/mirrorcommand.png"
+    style="width: 862px; height: 86px"
+    alt="MirrorCommand"
+  />
+</div>
+
 The Mirror Command Line project provides scripts to enable
 command line control of the `MagicMirror` system over a local network.
 The `MirrorCommand` Debian and RPM format package installation scripts perform

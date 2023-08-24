@@ -25,14 +25,14 @@ can be viewed by executing the command:
 Manual pages for these MirrorCommand commands can be viewed by executing
 any of the following commands (click to view the man page online):
 
-- [man mirror](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mirror.1.md)
-- [man 5 mirrorkeys](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mirrorkeys.5.md)
-- [man set_asound_conf](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/set_asound_conf.1.md)
-- [man mmscene](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mmscene.1.md)
-- [man mmscreen](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mmscreen.1.md)
-- [man showkeys](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/showkeys.1.md)
-- [man vol](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/vol.1.md)
-- [man websnap](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/websnap.1.md)
+- [man mirror](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mirror.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man 5 mirrorkeys](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mirrorkeys.5.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man set_asound_conf](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/set_asound_conf.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man mmscene](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mmscene.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man mmscreen](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/mmscreen.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man showkeys](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/showkeys.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man vol](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/vol.1.md){:target="_blank"}{:rel="noopener noreferrer"}
+- [man websnap](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/markdown/websnap.1.md){:target="_blank"}{:rel="noopener noreferrer"}
 
 ### Usage
 
@@ -126,7 +126,7 @@ Learn how to open a command line terminal window on various systems,
 how to get started using the command line, and see some examples of why
 the command line interface is so powerful by reading the MirrorCommand
 wiki article
-[Introduction to Using the Command Line](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/Introduction-to-Using-the-Command-Line).
+[Introduction to Using the Command Line](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/Introduction-to-Using-the-Command-Line){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Note that some screen switching operations on systems with multiple monitors
 may move the window focus from the command line terminal window to the
@@ -165,7 +165,7 @@ To start MagicMirror on a specified screen execute the command:
 The `MirrorCommand` package installs several `MMM-GoogleAssistant` voice
 recipes. One of these, the `MirrorCommand.js` recipe, enables several voice
 commands that can be used to control the MagicMirror. See the section
-[MMM-GoogleAssistant integration](https://mirrorcommand.dev/integration#mmm-googleassistant-integration)
+[MMM-GoogleAssistant integration](https://mirrorcommand.dev/integration#mmm-googleassistant-integration){:target="_blank"}{:rel="noopener noreferrer"}
 to get started with MMM-GoogleAssistant setup and integration.
 
 Once you have MMM-GoogleAssistant working and you can talk to your mirror

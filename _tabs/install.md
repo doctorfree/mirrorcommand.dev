@@ -11,9 +11,9 @@ post_style: page
 ### MagicMirror Installation
 
 MirrorCommand is intended for installation on a system running
-[MagicMirror](https://magicmirror.builders). If MagicMirror is not
+[MagicMirror](https://magicmirror.builders){:target="_blank"}{:rel="noopener noreferrer"}. If MagicMirror is not
 previously installed it can be installed following
-[these instructions](https://docs.magicmirror.builders/getting-started/installation.html#manual-installation). Alternatively, the MirrorCommand Debian or RPM package
+[these instructions](https://docs.magicmirror.builders/getting-started/installation.html#manual-installation){:target="_blank"}{:rel="noopener noreferrer"}. Alternatively, the MirrorCommand Debian or RPM package
 format installation will automatically install and configure MagicMirror if no
 existing MagicMirror installation is detected. This automated installation
 of MagicMirror includes installing and configuring PM2 for easy and powerful
@@ -32,7 +32,7 @@ MirrorCommand assumes that MagicMirror is installed in either
 
 To install MagicMirror simply install MirrorCommand using the Debian or RPM
 package format available at the
-[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases)
+[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}
 area of the Git repository.
 
 If MagicMirror is not installed in either `/usr/local/MagicMirror` or a non-root
@@ -86,9 +86,9 @@ or grant everyone access with
 `xhost +`
 
 **ROON:** If you plan to install both the
-[RoonCommandLine package](https://gitlab.com/doctorfree/RoonCommandLine)
+[RoonCommandLine package](https://gitlab.com/doctorfree/RoonCommandLine){:target="_blank"}{:rel="noopener noreferrer"}
 and the
-[MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand)
+[MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}
 on the same system then in order to enable automatic configuration of
 MirrorCommand's Roon configuration files, the RoonCommandLine
 package must be installed before the MirrorCommand package.
@@ -109,7 +109,7 @@ contents of the file `/etc/os-release`.
 
 To install on a Debian based Linux system, download the latest Debian
 format package from the
-[MirrorCommand releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 
@@ -131,7 +131,7 @@ openSUSE, OpenMandriva, Mandrake Linux, Red Hat Linux, and Oracle Linux.
 
 To install on an RPM based Linux system, download the latest RPM format
 package from the
-[MirrorCommand releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 

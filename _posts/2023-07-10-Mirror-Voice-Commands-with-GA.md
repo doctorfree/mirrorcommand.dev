@@ -10,9 +10,9 @@ img_path: "/posts/20230710"
 ## Overview
 
 Activating and configuring the
-[MMM-GoogleAssistant](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant)
-and [MMM-Detector](http://wiki.bugsounet.fr/en/MMM-Detector)
-modules on a [MagicMirror](https://magicmirror.builders/) can enable
+[MMM-GoogleAssistant](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant){:target="_blank"}{:rel="noopener noreferrer"}
+and [MMM-Detector](http://wiki.bugsounet.fr/en/MMM-Detector){:target="_blank"}{:rel="noopener noreferrer"}
+modules on a [MagicMirror](https://magicmirror.builders/){:target="_blank"}{:rel="noopener noreferrer"} can enable
 the use of recipes to control MagicMirror with voice commands using Google Assistant.
 
 Google Assistant voice control of MagicMirror utilizes a command line interface
@@ -45,9 +45,9 @@ using Google Assistant and the setup precedure required.
 ### Google Assistant Requirements
 
 This method for voice control of MagicMirror requires a
-[MagicMirror](https://magicmirror.builders/) with the
-[MMM-GoogleAssistant](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant)
-and [MMM-Detector](http://wiki.bugsounet.fr/en/MMM-Detector) modules
+[MagicMirror](https://magicmirror.builders/){:target="_blank"}{:rel="noopener noreferrer"} with the
+[MMM-GoogleAssistant](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant){:target="_blank"}{:rel="noopener noreferrer"}
+and [MMM-Detector](http://wiki.bugsounet.fr/en/MMM-Detector){:target="_blank"}{:rel="noopener noreferrer"} modules
 activated and configured properly. Setup for this method is considerably
 more difficult but once accomplished results in a superior quality setup
 with far more ease and flexibility of use. The Siri setup requires SSH and
@@ -57,9 +57,9 @@ over Google Assistant, especially in a noisy environment where voice commands
 may be unreliable. I use both.
 
 To get started with a MagicMirror installation, see the
-[MagicMirror Documentation](https://docs.magicmirror.builders/).
+[MagicMirror Documentation](https://docs.magicmirror.builders/){:target="_blank"}{:rel="noopener noreferrer"}.
 Alternately, and preferably, install the
-[MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand)
+[MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}
 which performs an automated installation and configuration of MagicMirror
 along with required modules.
 
@@ -67,14 +67,14 @@ along with required modules.
 
 If you have a MagicMirror with a microphone then you can setup Google Assistant
 by following the instructions at the
-[MMM-GoogleAssistant wiki](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant).
+[MMM-GoogleAssistant wiki](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant){:target="_blank"}{:rel="noopener noreferrer"}.
 This setup is not simple as it requires a Google Project with Actions and OAuth
 credentials. However, I found this 12 year old girl on YouTube who did it and
 so I figured I could too. It turns out I could so you probably can too.
 
 MMM-GoogleAssistant requires MMM-Detector which can also be setup and configured
 following the instructins at the
-[MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector).
+[MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector){:target="_blank"}{:rel="noopener noreferrer"}.
 
 ### Google Assistant MagicMirror Control Setup
 
@@ -90,17 +90,17 @@ that you get a response from Google Assistant. It it's working we can proceed.
 Voice control of MagicMirror as described in this document requires the
 use of a command line interface to issue the MagicMirror commands. This is
 accomplished with the
-[MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand)
+[MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}
 package which contains a shell command that acts as a frontend to
 various MagicMirror and system functions.
 
 See the
-[MirrorCommand README](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/README.md)
+[MirrorCommand README](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/README.md){:target="_blank"}{:rel="noopener noreferrer"}
 for an overview of this package and documentation on its installation,
 configuration, and use.
 
 Many Google Assistant voice triggers are preconfigured as MMM-GoogleAssistant
-recipes in the [MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand).
+recipes in the [MirrorCommand package](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}.
 
 **NOTE:** The MirrorCommand installation will install MagicMirror and required
 modules if you have not already installed MagicMirror. This automated installation
@@ -136,7 +136,7 @@ contents of the file `/etc/os-release`.
 
 To install on a Debian based system, download the latest Debian format
 package from the
-[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 
@@ -158,7 +158,7 @@ openSUSE, OpenMandriva, Mandrake Linux, Red Hat Linux, and Oracle Linux.
 
 To install on an RPM based Linux system, download the latest RPM format
 package from the
-[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 
@@ -223,9 +223,9 @@ settings.
 For more info on the `showkeys` command and the
 `/usr/local/MirrorCommand/etc/mirrorkeys` configuration file, see the
 man pages
-`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1)`
+`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1){:target="_blank"}{:rel="noopener noreferrer"}`
 and
-`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5)`
+`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5){:target="_blank"}{:rel="noopener noreferrer"}`
 by executing the `man` command:
 
 `man showkeys`
@@ -256,7 +256,7 @@ services - it simply does not enable access to those services you do not use.
 #### Configure mirror script
 
 Edit the main MagicMirror management script,
-[**/usr/local/MirrorCommand/bin/mirror**](https://github.com/doctorfree/MirrorCommand/blob/master/mirror.sh),
+[**/usr/local/MirrorCommand/bin/mirror**](https://github.com/doctorfree/MirrorCommand/blob/master/mirror.sh){:target="_blank"}{:rel="noopener noreferrer"},
 setting:
 
 - Location of your MagicMirror installation
@@ -408,6 +408,6 @@ little more difficult like "computer, mirror screen off" and "computer, mirror s
 
 ### References
 
-- [MagicMirror](https://magicmirror.builders/)
-- [MMM-GoogleAssistant wiki](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant)
-- [MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector)
+- [MagicMirror](https://magicmirror.builders/){:target="_blank"}{:rel="noopener noreferrer"}
+- [MMM-GoogleAssistant wiki](http://wiki.bugsounet.fr/en/MMM-GoogleAssistant){:target="_blank"}{:rel="noopener noreferrer"}
+- [MMM-Detector wiki](http://wiki.bugsounet.fr/en/MMM-Detector){:target="_blank"}{:rel="noopener noreferrer"}

@@ -53,12 +53,12 @@ using Siri and the setup precedure required.
 Voice control of MagicMirror as described in this document requires the
 use of a command line interface to issue the MagicMirror commands. This is
 accomplished with the
-[MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand)
+[MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}
 package which contains a shell command that acts as a frontend to
 MagicMirror and system actions.
 
 See the
-[MirrorCommand README](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/README.md)
+[MirrorCommand README](https://gitlab.com/doctorfree/MirrorCommand/-/blob/master/README.md){:target="_blank"}{:rel="noopener noreferrer"}
 for an overview of this package and documentation on its installation,
 configuration, and use.
 
@@ -78,7 +78,7 @@ contents of the file `/etc/os-release`.
 
 To install on a Debian based Linux system, download the latest Debian format
 package from the
-[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 
@@ -98,7 +98,7 @@ openSUSE, OpenMandriva, Mandrake Linux, Red Hat Linux, and Oracle Linux.
 
 To install on an RPM based Linux system, download the latest RPM format
 package from the
-[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases).
+[MirrorCommand Releases](https://gitlab.com/doctorfree/MirrorCommand/-/releases){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Install the MirrorCommand package by executing the command
 
@@ -160,9 +160,9 @@ settings.
 For more info on the `showkeys` command and the
 `/usr/local/MirrorCommand/etc/mirrorkeys` configuration file, see the
 man pages
-`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1)`
+`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1){:target="_blank"}{:rel="noopener noreferrer"}`
 and
-`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5)`
+`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5){:target="_blank"}{:rel="noopener noreferrer"}`
 by executing the `man` command:
 
 `man showkeys`
@@ -266,12 +266,12 @@ with the MagicMirror system, proceed to the next section.
 ## Apple Siri Setup
 
 To get started with Apple SSH shortcuts first enable SSH access on the system
-where the [MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand)
+where the [MirrorCommand](https://gitlab.com/doctorfree/MirrorCommand){:target="_blank"}{:rel="noopener noreferrer"}
 package was installed. Follow one of the many guides for setting up SSH
 with Apple Shortcuts. For example, these two guides should get you started:
 
-- [Remote control your Mac with your iPhone and SSH Key Shortcuts](https://dougbeal.com/2019/11/02/remote-control-your-mac-with-your-iphone-and-ssh-key-shortcuts/)
-- [Setting up SSH for Shortcuts](https://www.thoughtasylum.com/2020/06/01/setting-up-ssh-for-shortcuts/)
+- [Remote control your Mac with your iPhone and SSH Key Shortcuts](https://dougbeal.com/2019/11/02/remote-control-your-mac-with-your-iphone-and-ssh-key-shortcuts/){:target="_blank"}{:rel="noopener noreferrer"}
+- [Setting up SSH for Shortcuts](https://www.thoughtasylum.com/2020/06/01/setting-up-ssh-for-shortcuts/){:target="_blank"}{:rel="noopener noreferrer"}
 
 Verify that Apple Siri is working and responds to queries like "Hey Siri",
 "What time is it?". Verify that SSH Shortcuts are working by creating a
@@ -453,5 +453,5 @@ use the command:
 `bash -l -c "mirror default"`
 
 ## References
-- [Remote control your Mac with your iPhone and SSH Key Shortcuts](https://dougbeal.com/2019/11/02/remote-control-your-mac-with-your-iphone-and-ssh-key-shortcuts/)
-- [Setting up SSH for Shortcuts](https://www.thoughtasylum.com/2020/06/01/setting-up-ssh-for-shortcuts/)
+- [Remote control your Mac with your iPhone and SSH Key Shortcuts](https://dougbeal.com/2019/11/02/remote-control-your-mac-with-your-iphone-and-ssh-key-shortcuts/){:target="_blank"}{:rel="noopener noreferrer"}
+- [Setting up SSH for Shortcuts](https://www.thoughtasylum.com/2020/06/01/setting-up-ssh-for-shortcuts/){:target="_blank"}{:rel="noopener noreferrer"}

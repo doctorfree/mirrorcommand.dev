@@ -57,9 +57,9 @@ settings.
 For more info on the `showkeys` command and the
 `/usr/local/MirrorCommand/etc/mirrorkeys` configuration file, see the
 man pages
-`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1)`
+`[showkeys.1](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/showkeys.1){:target="_blank"}{:rel="noopener noreferrer"}`
 and
-`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5)`
+`[mirrorkeys.5](https://gitlab.com/doctorfree/MirrorCommand/-/wikis/mirrorkeys.5){:target="_blank"}{:rel="noopener noreferrer"}`
 by executing the `man` command:
 
 `man showkeys`
@@ -90,7 +90,7 @@ services - it simply does not enable access to those services you do not use.
 ### Configure mirror script
 
 Edit the main MagicMirror management script,
-[**/usr/local/MirrorCommand/bin/mirror**](https://github.com/doctorfree/MirrorCommand/blob/master/mirror.sh),
+[**/usr/local/MirrorCommand/bin/mirror**](https://github.com/doctorfree/MirrorCommand/blob/master/mirror.sh){:target="_blank"}{:rel="noopener noreferrer"},
 setting:
 
 - Location of your MagicMirror installation
@@ -152,7 +152,7 @@ with `sudo set_asound_conf -r`, and select a configuration for you with
 
 ### Image archive installation
 
-See the [MirrorImages repository](https://gitlab.com/doctorfree/MirrorImages)
+See the [MirrorImages repository](https://gitlab.com/doctorfree/MirrorImages){:target="_blank"}{:rel="noopener noreferrer"}
 to download several packages that can be used to download image archives
 preconfigured for use with the MirrorCommand config files. This is optional
 and is provided simply as a convenience. Note that none of the MirrorImages

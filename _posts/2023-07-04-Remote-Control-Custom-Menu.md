@@ -10,7 +10,7 @@ img_path: "/posts/20230720"
 ## Overview
 
 The `mirror` command line utilities can be integrated into a custom
-[MMM-Remote-Control](https://github.com/Jopyth/MMM-Remote-Control) menu.
+[MMM-Remote-Control](https://github.com/Jopyth/MMM-Remote-Control){:target="_blank"}{:rel="noopener noreferrer"} menu.
 In this way the MMM-Remote-Control module can be extended to perform
 many additional actions including taking a screenshot, rotating the
 display, and controlling playback of video. This can, for example,
@@ -23,7 +23,7 @@ a custom menu but it is currently incomplete. To add custom commands
 to MMM-Remote-Control using the `mirror` command:
 
 - Install the MirrorCommand utilities
-    - See the MirrorCommand [Installation section](https://gitlab.com/doctorfree/MirrorCommand#installation)
+    - See the MirrorCommand [Installation section](https://mirrorcommand.lazyman.dev/install)
 - Create a custom JSON configuration file in the MagicMirror config folder
 - Modify the config section of the MMM-Remote-Control module entry in the MagicMirror `config.js`
 

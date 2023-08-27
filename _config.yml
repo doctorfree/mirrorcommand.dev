@@ -27,7 +27,10 @@ description: >- # used by seo meta and the atom feed
   command line control of the MagicMirror system over a local network.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://mirrorcommand.dev"
+
+plugins:
+  - jekyll-sitemap
 
 github:
   username: doctorfree/MirrorCommand
